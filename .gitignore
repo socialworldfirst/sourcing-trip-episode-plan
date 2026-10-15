@@ -1,0 +1,5 @@
+*.py
+*.md
+_guard/
+.DS_Store
+__pycache__/
