@@ -1,4 +1,100 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Sourcing Trip Diaries</title></head><body><div class="wrap">
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Sourcing Trip Diaries</title><style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+/* Elevation: none. Nothing on this page casts a shadow. Separation is fill
+   (#f7f5f7) or hairline (1px #e6e8eb), never elevation. Do not remove. */
+*{box-shadow:none!important}
+body{font-family:'Poppins',sans-serif;background:#fff;color:#1f2323;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+.rose{color:#ff0051}
+
+.wrap{display:grid;grid-template-columns:216px 1fr;gap:60px;max-width:1180px;margin:0 auto;padding:0 40px 120px}
+nav.side{position:sticky;top:0;align-self:start;height:100vh;padding-top:54px}
+nav.side .nt{font-size:11.5px;font-weight:600;color:#9aa1a1;letter-spacing:.09em;text-transform:uppercase;margin-bottom:18px}
+nav.side a{display:flex;gap:11px;font-size:13.5px;color:#69727d;padding:7px 0;line-height:1.4}
+nav.side a .n{color:#c3c8cc;font-size:12px;font-variant-numeric:tabular-nums;padding-top:1px}
+nav.side a:hover{color:#1f2323}
+nav.side a.on{color:#ff0051;font-weight:500}
+nav.side a.on .n{color:#ff0051}
+nav.side img.logo{height:17px;margin-bottom:30px;display:block}
+
+.hd{padding:54px 0 10px}
+.hd .ey{font-size:12.5px;font-weight:600;color:#ff0051;letter-spacing:.07em;margin-bottom:16px}
+.hd h1{font-size:clamp(34px,4.4vw,52px);font-weight:600;letter-spacing:-1.4px;line-height:1.08;margin-bottom:20px}
+.hd .sub{font-size:17px;color:#5b626a;line-height:1.66;max-width:720px}
+.hd .meta{margin-top:22px;font-size:13px;color:#9aa1a1;padding-top:20px;border-top:1px solid #eef0f2}
+
+section{padding:52px 0;border-top:1px solid #eef0f2}
+section:first-of-type{border-top:none}
+.sn{font-size:12.5px;font-weight:600;color:#ff0051;letter-spacing:.08em;margin-bottom:13px}
+h2{font-size:clamp(24px,2.7vw,33px);font-weight:600;letter-spacing:-.7px;line-height:1.16;margin-bottom:16px}
+p.lead{font-size:15.5px;color:#5b626a;line-height:1.68;max-width:760px}
+.note{margin-top:26px;font-size:13.5px;color:#69727d;line-height:1.65;border-left:2px solid #ff0051;padding-left:16px;max-width:760px}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}
+.pane{border:1px solid #e6e8eb;border-radius:16px;padding:24px 26px;box-shadow:none}
+.pane h4{font-size:12.5px;font-weight:600;color:#ff0051;letter-spacing:.06em;text-transform:uppercase;margin-bottom:13px}
+.pane .pp{font-size:14px;color:#5b626a;line-height:1.62;margin-bottom:15px}
+
+.cards{display:grid;gap:18px;margin-top:28px}
+.cards.c2{grid-template-columns:repeat(2,1fr)}
+.card{background:#f7f5f7;border-radius:16px;padding:26px 24px;border:none;box-shadow:none}
+.card .cn{font-size:12px;font-weight:600;color:#ff0051;letter-spacing:.06em;margin-bottom:10px}
+.card h3{font-size:18px;font-weight:600;letter-spacing:-.3px;margin-bottom:13px}
+
+ul.li{list-style:none}
+ul.li li{position:relative;padding-left:26px;font-size:13.8px;color:#3a3f44;margin-bottom:9px;line-height:1.55}
+ul.li li:last-child{margin-bottom:0}
+ul.li li::before{content:"";position:absolute;left:0;top:3px;width:16px;height:16px;border-radius:50%;background:#ff0051}
+ul.li li::after{content:"";position:absolute;left:4.6px;top:6px;width:4px;height:7.5px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(43deg)}
+
+.rows{margin-top:28px;border-top:1px solid #e6e8eb}
+.rows .row{display:grid;grid-template-columns:190px 1fr;gap:26px;padding:16px 0;border-bottom:1px solid #e6e8eb;align-items:start}
+.rows.tight .row{padding:13px 0}
+.rows .rl{font-size:14px;font-weight:600}
+.rows .rl b{color:#ff0051;font-weight:600;margin-right:5px}
+.rows .rv{font-size:14.5px;color:#5b626a;line-height:1.6}
+
+.tbl{margin-top:28px;border-top:1px solid #e6e8eb}
+.tr{display:grid;grid-template-columns:190px 80px 1fr;gap:20px;padding:14px 0;border-bottom:1px solid #e6e8eb;align-items:start}
+.tr span:first-child{font-size:14px;font-weight:600}
+.tr span:last-child{font-size:14px;color:#5b626a;line-height:1.58}
+.tr.th span{font-size:11.5px;font-weight:600;color:#9aa1a1;letter-spacing:.07em;text-transform:uppercase}
+.fx{font-size:13px;color:#9aa1a1;font-weight:500}
+.tl{font-size:13px;color:#ff0051;font-weight:600}
+
+.copyblock{margin-top:26px;border:1px solid #e6e8eb;border-radius:14px;overflow:hidden;max-width:760px}
+.cbh{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:1px solid #eef0f2}
+.cbh span{font-size:12.5px;font-weight:600;color:#69727d}
+.cpy{font-family:'Poppins';font-size:12.5px;font-weight:500;color:#ff0051;background:#fff;border:1.5px solid #ff0051;border-radius:999px;padding:5px 15px;cursor:pointer}
+.cpy:hover{background:#ff0051;color:#fff}
+pre{font-family:'Poppins';font-size:13.5px;color:#3a3f44;line-height:1.85;padding:18px;white-space:pre-wrap}
+
+.links{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.links a{border:1.5px solid #ff0051;color:#ff0051;border-radius:999px;padding:10px 22px;font-size:14px;font-weight:500}
+.links a:hover{background:#ff0051;color:#fff}
+
+.lockw{max-width:1180px;margin:0 auto;padding:0 40px 50px;font-size:12px;color:#c3c8cc}
+.lockw a{border-bottom:1px solid #e6e8eb}
+
+@media(max-width:940px){
+ .wrap{grid-template-columns:1fr;gap:0;padding:0 24px 90px}
+ nav.side{display:none}
+ .two,.cards.c2{grid-template-columns:1fr}
+ .rows .row,.tr{grid-template-columns:1fr;gap:5px}
+ .tr span:last-child{margin-top:2px}
+}
+
+
+.t4 .tr{grid-template-columns:150px 1fr 1fr 1fr;align-items:start}
+.t4 .tr.day{grid-template-columns:1fr;background:#f7f5f7;font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#ff0051;padding:10px 16px}
+.t4 .tr span{font-size:13px;line-height:1.5}
+.t4 .tr span i{display:block;font-style:normal;font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#9aa1a1;margin-bottom:4px}
+.t4 .tc b{color:#1f2323}
+.t3 .tr{grid-template-columns:190px 1fr 220px}
+@media(max-width:940px){.t4 .tr,.t3 .tr{grid-template-columns:1fr}}
+
+</style></head><body><div class="wrap">
   <nav class="side"><img src="wf/logo.svg" class="logo" alt="WorldFirst"/><div class="nt">Contents</div><a href="#read" data-s="read"><span class="n">01</span><span>How to read this</span></a><a href="#timeline" data-s="timeline"><span class="n">02</span><span>Timeline by layer</span></a><a href="#voice" data-s="voice"><span class="n">03</span><span>Voice pull list</span></a><a href="#broll" data-s="broll"><span class="n">04</span><span>B-roll scene list</span></a><a href="#gfx" data-s="gfx"><span class="n">05</span><span>Graphics and other elements</span></a><a href="#counts" data-s="counts"><span class="n">06</span><span>Counts</span></a></nav>
   <main>
     <div class="hd"><div class="ey">WorldFirst · China Sourcing Trip, Tour 1 · voice, picture, graphics</div><h1>Sourcing Trip Diaries, Tour 1: track sheet</h1><p class="sub">The episode plan split into its layers. Voice is what the viewer hears (sync dialogue from a clip, or a voiceover still to record). Picture is what is on screen (A-roll, the person speaking, or B-roll, a scene with no speech needed). Graphics and other is everything built in post: title cards, the map, lower thirds, stat cards, subtitles, the end card and music. Timecodes are budgets, not cuts.</p><div class="meta">Owner Steven Chen · 15 Oct 2026 · Companion to index.html (the narrative plan) · Clip ids from the transcript sheets, picture unverified · Internal</div></div>
